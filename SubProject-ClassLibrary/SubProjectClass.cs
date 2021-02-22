@@ -9,6 +9,16 @@ namespace SubProject_ClassLibrary
 {
     public static class SubProjectClass
     {
-        public static int AddFromStrings(string a, string b) => SharedClass.Add(int.Parse(a), int.Parse(b));
+        public static int Sum(List<int> numbers)
+        {
+            int result = 0;
+
+            foreach(var n in numbers)
+            {
+                result = SharedClass.Add(result, n);
+            }
+
+            return result;
+        }
     }
 }

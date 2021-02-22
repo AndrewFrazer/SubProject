@@ -11,17 +11,6 @@ namespace SubProject_ConsoleApp
     {
         static void Main(string[] args)
         {
-            if (args.Count() == 2)
-            {
-                try
-                {
-                    Console.WriteLine(SubProjectClass.AddFromStrings(args[0], args[1]));
-                }
-                catch
-                {
-                    Console.WriteLine("Could not parse to ints");
-                }
-            }
         }
     }
 }
